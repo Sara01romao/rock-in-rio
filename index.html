@@ -42,7 +42,7 @@
                     <label>Email</label><br>
                     <div class="groupInput">
                         <i class="fas fa-microphone-alt"></i>
-                        <input type="text">
+                        <input type="text" id="login"  name="login" required>
                     </div>
                     
                 </div>
@@ -51,18 +51,20 @@
                     <label>Senha</label><br>
                     <div class="groupInput">
                         <i class="fas fa-music"></i>
-                        <input type="text">
+                        <input type="password" id="senha" name="senha" autocomplete="off" required>
                     </div>
-                    
+                    <p id="msg"></p>
                 </div>
                
                 <div class="lembrar">
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name=""  id="" >
                     <p>Lembrar meus dados</p>
                 </div>
-                
-                <button class="btn-entrar">Entrar</button>
+                <p id="demo"></p>
+                <a class="btn-entrar" onclick="entrar()">Entrar</a>
             </form>
+
+            <p id="demo"></p>
 
             <div class="cadastro">
                 <div class="esqueceu">
@@ -72,7 +74,7 @@
     
                 <div class="grupBtnCadastrar">
                     <p>Caso ainda não tenha uma conta</p>
-                    <button>Cadastre-se</button>
+                    <a href="#">Cadastre-se</a>
                 </div>
             </div>
             
@@ -84,7 +86,7 @@
 
     </section>
     
-
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

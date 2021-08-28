@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdn aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- cdn icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="/css/main.css">
+
     <title>Home</title>
 </head>
 <body>
-    <h1>home</h1>
+    <header class="headerHome">
+        <nav class="containerHome">
+            <img src="/img/logo_rockinrio 2.png" alt="">
+        </nav>
+        
+    </header>
+
+    <section class="userInfo containerHome">
+        <div class="userName">
+            <div class="retangulo"></div>
+           <p> Olá Gomes!</p>
+           <img src="../img/iconmao1.svg" alt="">
+        </div>
+
+        <div class="busca">
+            <i class="fas fa-search"></i>
+            <input type="search">
+            
+        </div>
+    </section>
+
+    
+
+    <section class="showBanner containerHome">
+        <div class="infoShowBanner">
+            <h2>Queen - The Night At The Opera</h2>
+            <div class="dateShow">
+                <i class="fas fa-calendar-alt"></i>
+                <h2>25/03</h2>
+            </div>
+        </div>
+        <div class="banner">
+            <button>Comprar Ingresso</button>
+        </div>
+        
+
+    </section>
+
+
+    <section class="eventos containerHome">
+        <h2>Próximos Eventos</h2>
+        <div class="cardsEventos">
+            <div class="cardEvento">
+                <div >
+                    <img src="/img/card1.png" alt="">
+                </div>
+
+                <p>Iron Maiden</p>
+
+                <div class="dateEventos">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>25/03</p>
+                </div>
+                <button>Pré-Venda</button>
+            </div>
+
+            <div class="cardEvento">
+                <div >
+                    <img src="/img/card2.png" alt="">
+                </div>
+
+                <p>S.A.O.D</p>
+
+                <div class="dateEventos">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>25/03</p>
+                </div>
+                <button>Pré-Venda</button>
+            </div>
+
+            <div class="cardEvento">
+                <div >
+                    <img src="/img/card3.png" alt="">
+                </div>
+
+                <p>Bon Jovi</p>
+
+                <div class="dateEventos">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>25/03</p>
+                </div>
+                <button>Pré-Venda</button>
+            </div>
+
+            <div class="cardEvento">
+                <div >
+                    <img src="/img/card4.png" alt="">
+                </div>
+
+                <p>Metallica</p>
+
+                <div class="dateEventos">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>25/03</p>
+                </div>
+                <button>Pré-Venda</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>A fraqueza da mente escode o infinito de nós ! -Jim Morrison</p>
+        <img src="../img/iconmao2.svg" alt="">
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

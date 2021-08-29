@@ -62,9 +62,77 @@
         </div>
     </section>
 
-    <div id="app">
+    <div id="modal" class="modal">
+       
+        <div class="modalContainer">
+          
+            <div class="modal-ImgEvento">
+                <img src="/img/modalbg.png" alt="">
+            </div>
 
+            <div class="modalInfo">
+                <button id="close" onclick="modalClose()">X</button>
+                <div class="logo-modal">
+                    <img src="/img/logo-modal.png" alt="">
+                </div>
+
+                <h2> Queen <br>The Night At The Opera</h2>
+
+                <div class="">
+                    <div class="infoTime">
+                        <div class="flex">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p>25/03</p>
+                        </div>
+                        <div class="flex">
+                            <i class="far fa-clock"></i>
+                            <p>22:30</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="modal-Cidade">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Cidade do Rock -RJ
+                    </div>
+                </div>
+
+                <div>
+                    <div class="entrada">
+                        <button class="meia">MEIA</button>
+                        <button class="inteira">INTEIRA</button>
+                    </div>
+
+                    <div class="price">
+                        <p>R$ 300,00 <small>und</small></p>
+                        <div>
+                            <button>+</button>
+                            <input type="number" placeholder="1">
+                            <button>-</button>
+                        </div>
+                    </div>
+
+                    <div class="btn-carrinho">
+                        <button class="add">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Adiconar carrinho</p>
+                        </button>
+
+                        <button class="remove">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Remover carrinho</p>
+                        </button>
+                    </div>
+
+                    
+                </div>
+                <button class="finalizar">Finalizar Compra</button>
+            </div>
+        </div>
     </div>
+
+
+
 
     <footer>
         <p>A fraqueza da mente escode o infinito de nós ! -Jim Morrison</p>

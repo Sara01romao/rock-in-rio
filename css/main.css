@@ -28,6 +28,11 @@ font-family: 'Rokkitt', serif;
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
 
 
 
@@ -269,7 +274,7 @@ label{
 /*---------------HOME--------------------*/
 .containerHome{
     max-width: 955px;
-    
+    padding: 0px 30px;
     margin: 0 auto;
     
 }
@@ -295,6 +300,7 @@ label{
 
 .userInfo{
     margin-top: 50px;
+    
     display: flex;
     justify-content: space-between;
      
@@ -471,4 +477,233 @@ footer{
 
 footer p{
     margin-right: 5px;
+}
+
+
+
+
+/*MODAL*/
+
+.modal{
+ display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  font-family: 'Roboto', sans-serif;
+  
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0px;
+
+
+      
+}
+
+.modalContainer{
+    height:650px ;
+    max-width: 704px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: -70px;
+   
+   
+}
+
+
+
+.modal-ImgEvento img{
+    flex: 1;
+    width: 336px;
+    height:650px ;
+   
+    object-fit: cover;
+}
+
+@media screen and (max-width:770px) {
+    .modal-ImgEvento{
+        display: none;
+    }
+    
+}
+
+
+
+.modalInfo{
+    flex: 1;
+   
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.logo-modal{
+    margin-top: 36px;
+}
+
+.modalContainer h2{
+    max-width: 360px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.infoTime{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoTime i, .modal-Cidade i{
+    color: var(--red);
+    margin-right: 5px;
+}
+
+.modal-Cidade {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.entrada{
+    display: flex;
+    justify-content: center;
+}
+
+.entrada button{
+   width: 104px;
+   height: 40px;
+   font-size: 15px; 
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.meia{
+    border: 1px solid red;
+    color: var(--red);
+    background-color: #fff;
+    margin-right: 56px;
+
+}
+
+.meia:hover{
+    background-color:  rgba(250, 159, 159, 0.527);
+    
+}
+
+.inteira{
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+}
+
+.inteira:hover{
+    background-color: var(--black);
+}
+
+.price{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.price p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #4C4C4C;
+    margin-right: 38px ;
+}
+
+.price input{
+    border-radius: 2px;
+    width: 54px;
+    height: 23px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #4C4C4C;
+    
+}
+
+.price input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.price input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+
+
+
+
+.price button{
+    background-color: var(--red);
+    width: 18px;
+    height: 23px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.price button:hover{
+   background-color: var(--black);
+}
+
+.btn-carrinho{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-carrinho button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 296px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.btn-carrinho button:hover{
+    opacity: 0.9;
+}
+
+.btn-carrinho i{
+    margin-right: 5px;
+}
+
+.add{
+    background-color: var(--red);
+}
+
+.remove{
+    background-color: var(--black);
+}
+
+.finalizar{
+   
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    background-color: #00923A;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.finalizar:hover{
+    background-color: rgb(0, 83, 0);
 }

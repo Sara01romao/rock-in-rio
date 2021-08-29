@@ -40,14 +40,29 @@ const eventosData = [
           <i class="fas fa-calendar-alt"></i>
           <p>${e.day}</p>
       </div>
-      <button onclick="modal()">Pré-Venda</button>
+      <button onclick="modalOpen()">Pré-Venda</button>
     </div>
     `)
   }).join(" ")}
   
   `
+
+
+
   
-  function modal(){
-    console.log("modal")
+  
+  function modalOpen(){
+    var modalId = document.getElementById("modal")
+
+    modalId.style.display="block"
   
   }
+
+
+  function modalClose(){
+    var modalId = document.getElementById("modal")
+
+    modalId .style.display="none"
+  
+  }
+ 

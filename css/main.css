@@ -134,6 +134,7 @@ label{
     border-radius: 5px;
     font-size: 20px;
     outline: 0;
+    padding: 0px 10px;
    
     
 }
@@ -247,6 +248,11 @@ label{
     opacity: 0.8;
     
    
+}
+
+#msg{
+    margin-top: 3px;
+    color: red;
 }
 
 
@@ -405,7 +411,8 @@ label{
 .cardsEventos{
     margin-top: 24px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .cardEvento{
@@ -413,10 +420,12 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 .cardEvento img{
     width: 183px;
     height: 184px;
+    object-fit: none;
 }
 
 .dateEventos{

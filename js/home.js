@@ -47,9 +47,6 @@ const eventosData = [
   
   `
 
-
-
-  
   
   function modalOpen(){
     var modalId = document.getElementById("modal")
@@ -59,10 +56,40 @@ const eventosData = [
   }
 
 
+
   function modalClose(){
     var modalId = document.getElementById("modal")
 
     modalId .style.display="none"
   
   }
+
+  modal.addEventListener('click', function(e) {
+    if (e.target == this){
+      modalClose();
+    } 
+  });
+ 
+
+
+  function modal2Open(){
+    var modalId = document.getElementById("modal2")
+
+    modalId.style.display="block"
+    modalClose();
+  
+  }
+
+  function modal2Close(){
+    var modalId = document.getElementById("modal2")
+
+    modalId .style.display="none"
+  
+  }
+
+  modal2.addEventListener('click', function(e) {
+    if (e.target == this){
+      modal2Close();
+    } 
+  });
  

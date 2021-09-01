@@ -302,10 +302,12 @@ label{
     margin-top: 50px;
     
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-between;
      
 }
+
+
 
 .retangulo{
     width: 16px;
@@ -315,7 +317,7 @@ label{
 }
 
 .userName{
-    margin-right: 213px;
+    
     display: flex;
     align-items: center;
     border: 1px solid red;
@@ -333,30 +335,63 @@ label{
     font-size: 20px;
 }
 
-.busca input{
-    border: none;
+.busca{
     max-width: 455px;
+    display: flex;
+    align-items: center;
     background-color: var(--grey);
     border-radius: 5px;
+}
+
+.busca input{
+   
+    max-width: 300px;
+    background-color: var(--grey);
     font-size: 20px;
     outline: 0;
     height: 40px;
     padding: 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
 }
+
+.busca input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+
 
 
 
 .busca i{
-    position: relative;
-    left: 263px;
+    margin-left: 5px;
+    width: 30px;
     color: #4D4D4D;
+    
     
 }
 
 @media screen and (max-width:767px) {
-    .busca{
+    .userInfo{
+        flex-direction: column;
+        
+       
+         
+    }
+     .busca{
         margin: 20px auto ;
+    } 
+
+    
+}
+
+@media screen and (max-width:450px){
+    .busca input{
+        max-width: 200px;
     }
 }
 
@@ -369,9 +404,21 @@ label{
 
 .infoShowBanner{
     display: flex;
+    justify-content: center;
     justify-content: space-between;
     margin: 40px 0px 20px 0px;
 
+}
+
+.infoShowBanner h2{
+    margin-right: 20px;
+    color: #4D4D4D;
+}
+
+@media screen and (max-width:450px){
+    .infoShowBanner h2{
+       font-size: 18px;
+    }
 }
 
 .dateShow{
@@ -381,6 +428,7 @@ label{
 
 .dateShow i{
     margin-right: 10px;
+    
 }
 
 .banner{
@@ -394,7 +442,7 @@ label{
     border-radius: 10px;
     display: flex;
     align-items: flex-end;
-
+padding: 0px 30px;
 }
 
 .banner button{
@@ -411,9 +459,19 @@ label{
     cursor: pointer;
 }
 
+@media screen and (max-width:767px) {
+    .banner button{
+        max-width: 250px;
+        font-size: 18px;
+    }
+         
+   
+    
+}
+
 .banner button:hover{
     background-color: var(--black);
-    border: 3px solid red;
+   
 }
 
 .eventos{
@@ -424,6 +482,7 @@ label{
 .eventos h2{
     text-align: center;
     margin-top: 27px;
+    color: #4D4D4D;
     
 }
 
@@ -434,13 +493,26 @@ label{
     justify-content: space-between;
 }
 
+@media screen and (max-width:500px) {
+    .cardsEventos{
+       
+        justify-content: center;
+    }
+    
+}
+
 .cardEvento{
-    width: 183px;
+    width: 213px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    
 }
+
+
+
+
 .cardEvento img{
     width: 183px;
     height: 184px;
@@ -455,6 +527,12 @@ label{
 
 .dateEventos i{
     margin-right: 10px;
+    color: #4D4D4D;
+}
+
+.cardEvento{
+    color: #4D4D4D;
+    font-weight: bold;
 }
 
 .cardEvento button{
@@ -484,12 +562,14 @@ footer{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    padding: 0px 30px;
 
 
 }
 
 footer p{
     margin-right: 5px;
+   
 }
 
 
@@ -583,7 +663,7 @@ footer p{
 
 .modal-Cidade {
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .entrada{
@@ -722,7 +802,7 @@ footer p{
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 19px;
+    margin-top: 30px;
     border-bottom-right-radius: 20px;
 }
 

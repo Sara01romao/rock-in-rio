@@ -36,5 +36,5 @@ LOGIN
 <br>
 HOME
 <p align="center">
-  <img max-width="auto" height="auto"  src="https://user-images.githubusercontent.com/46323667/131863564-8350e19c-052b-4a78-afdb-f3c0e428715c.png">
+  <img max-width="auto" height="auto"  src="https://user-images.githubusercontent.com/46323667/131870796-75fa8264-3a55-4251-b368-e00ac29509f1.png">
 </p>

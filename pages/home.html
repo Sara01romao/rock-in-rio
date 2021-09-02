@@ -18,7 +18,7 @@
 <body>
     <header class="headerHome">
         <nav class="containerHome">
-            <img src="/img/logo_rockinrio 2.png" alt="">
+            <img src="/img/logo_rockinrio 2.png" alt="" >
         </nav>
         
     </header>
@@ -48,7 +48,7 @@
                 <h2>25/03</h2>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner" data-aos="zoom-out" data-aos-duration="1000">
             <button onclick="modalOpen()">Comprar Ingresso</button>
         </div>
         
@@ -58,7 +58,8 @@
 
     <section class="eventos containerHome">
         <h2>Próximos Eventos</h2>
-        <div class="cardsEventos" id="cardsEventos">
+        <div class="cardsEventos" id="cardsEventos" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
            
         </div>
     </section>
@@ -107,9 +108,9 @@
                     <div class="price">
                         <p>R$ 300,00 <small>und</small></p>
                         <div>
-                            <button>+</button>
-                            <input type="number" placeholder="1">
-                            <button>-</button>
+                            <button onclick="addQtd()">+</button>
+                            <input type="number" id="count"  value="1">
+                            <button onclick="removeQtd()" id="remove"   >-</button>
                         </div>
                     </div>
 

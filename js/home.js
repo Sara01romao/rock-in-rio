@@ -29,7 +29,7 @@ const eventosData = [
   
   ${eventosData.map((e)=>{
     return (`
-      <div class="cardEvento">
+      <div class="cardEvento" >
       <div >
           <img src="${e.photo}" alt="">
       </div>
@@ -47,7 +47,12 @@ const eventosData = [
   
   `
 
+
   
+  /*MODAL 1 */ 
+
+  let contador = 1
+
   function modalOpen(){
     var modalId = document.getElementById("modal")
 
@@ -60,18 +65,46 @@ const eventosData = [
   function modalClose(){
     var modalId = document.getElementById("modal")
 
-    modalId .style.display="none"
+    modalId .style.display="none";
+    document.getElementById("count").value = 1;
+    contador = 1;
+    
+    
   
   }
 
   modal.addEventListener('click', function(e) {
     if (e.target == this){
       modalClose();
+      
+      
     } 
   });
+
+
+  /*CONTADOR */ 
+  
+  
+  function addQtd(){
+    contador++
+    document.getElementById("count").value = contador
+    
+   
+  }
+
+  function removeQtd(){
+    if(contador > 1){
+      contador--;
+      document.getElementById("count").value = contador
+      
+    }
+    
+  }
+
+
  
 
-
+ /*MODAL 2 */ 
   function modal2Open(){
     var modalId = document.getElementById("modal2")
 
@@ -93,3 +126,6 @@ const eventosData = [
     } 
   });
  
+
+
+  

@@ -320,7 +320,7 @@ label{
     
     display: flex;
     align-items: center;
-    border: 1px solid red;
+    
 }
 
 .userName p{
@@ -785,12 +785,18 @@ footer p{
 
 .add{
     background-color: var(--red);
+    cursor: pointer;
+
 }
+
 
 .remove{
     background-color: var(--black);
+    cursor: pointer;
    
 }
+
+
 
 .finalizar{
    
